@@ -20,7 +20,6 @@ async def recent_release():
 @router.get("/search")
 async def search_anime(query: str):
     url = f"{BASE_URL}/{query}"
-    # params = {"keyw": keyword}
     response = requests.get(url, headers=headers)
     data = response.json()
     if data: 

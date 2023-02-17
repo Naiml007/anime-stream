@@ -127,3 +127,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+body {
+  justify-content: center;
+  display: flex;
+}
+
+h1 {
+  color: steelblue;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+body > div {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}

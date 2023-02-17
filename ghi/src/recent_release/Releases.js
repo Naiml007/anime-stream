@@ -10,7 +10,7 @@ export default function Releases() {
       try {
         const response = await fetch(`http://localhost:8000/recent_release`);
         const data = await response.json();
-        console.log("THIS iS THE DATA", data)
+        console.log("THIS iS RECENT RELEASES", data)
         setReleases(data.results);
       } catch (e) {
         console.error(e);
@@ -28,7 +28,6 @@ export default function Releases() {
           Title: {anime.title} -- Episode: {anime.episodeNumber} <br />
           <img width="250px" src={anime.image} alt="Cover"/>
         </div>
-
           ))}
     </div>
 
