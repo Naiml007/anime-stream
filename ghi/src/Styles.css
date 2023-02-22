@@ -128,21 +128,14 @@ table {
   border-spacing: 0;
 }
 
-body {
-  justify-content: center;
-  display: flex;
-}
-
 h1 {
   color: steelblue;
   font-weight: 800;
-  font-size: 2em;
+  font-size: 1.5em;
+  padding: 15px 0;
 }
 
 body > div {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  margin: 20px;
 }

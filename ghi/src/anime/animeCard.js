@@ -1,15 +1,16 @@
 import React from "react";
+import './cardStyle.css'
 
 
 export default function AnimeCard(props) {
 
   return (
-    <div>
-      <img src={props.data.image} alt="cover"/><br />
-      <h1>
-      {props.data.title}
-      </h1>
-      {props.data.description}
+    <div className="card">
+      <div className="card-content">    
+      <img src={props.data.image} className="card-img" alt="cover"/><br />
+      <h1>{props.data.title}</h1>
+          Episode #: {props.data.episodeNumber}      
+      </div>
     </div>
   );
-}
+} 

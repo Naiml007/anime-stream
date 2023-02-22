@@ -24,9 +24,11 @@ export default function AnimeInfo() {
 
   return (
     <div>
+      <div className="container">
       {animeInfo ? 
         <AnimeCard data={animeInfo} /> : null
       }
+      </div>
    </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
+import AnimeCard from "../anime/AnimeCard";
+import './releaseStyle.css'
 
 export default function Releases() {
   const [releases, setReleases] = useState([]);
@@ -19,16 +20,21 @@ export default function Releases() {
 
     fetchReleases();
   }, []);
-
   return (
 
+
     <div>
-      {releases.map(anime => (
+      <h2>NEW RELEASES</h2>
+      <div className="container">
+      {releases.map((anime) => (
         <div key={anime.id}>
-          Title: {anime.title} -- Episode: {anime.episodeNumber} <br />
-          <img width="250px" src={anime.image} alt="Cover"/>
+          <AnimeCard data={anime} />
         </div>
           ))}
+      </div>
+      <div>
+        HELLLOOOO
+      </div>
     </div>
 
   )

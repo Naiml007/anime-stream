@@ -18,9 +18,8 @@ function App() {
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <header>
-          <div className="container">
-              <h1>HELLO WORLD</h1>
-            <br />
+          <div>
+              <h1>MOMO-STREAMING</h1>
             <Routes>
               <Route path="/" element={<Releases/>} />
               <Route path='details/:id' element={<AnimeInfo/>} />
