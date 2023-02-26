@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  direction: row;
+  justify-content: center;
+}
+.detail {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.dropdown-content {
+  overflow: scroll;
+  max-height: 300px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.anime-img {
+  width: 20%;
+  height: 100%;
+}
+
+span {
+  font-weight: 600;
+  color: crimson;
+}
+
+p {
+  margin: 5px 0;
+}

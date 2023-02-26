@@ -36,3 +36,13 @@ async def get_anime_details(id:str):
         return data
     except:
         raise HTTPException(400, detail="Bad Request")
+    
+@router.get("/{query}")
+async def get_anime_episode(query:str):
+    try:
+        url = f'{BASE_URL}/watch/{query}'
+        response = requests.get(url, headers=headers)
+        data = response.json()
+        return data
+    except:
+        raise HTTPException(400, detail="Bad Request")

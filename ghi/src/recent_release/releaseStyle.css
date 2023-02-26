@@ -7,7 +7,14 @@
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: darkred;
+}
+
+.card-btn {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
 }
