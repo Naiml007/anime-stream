@@ -1,19 +1,5 @@
-.container {
-  display: flex;
-  direction: row;
-  justify-content: center;
-}
-.detail {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-basis: 50%;
-  text-align: start;
-  padding-left: 20px;
-}
-
 .dropdown {
-  position: relative;
+  position: static;
   display: inline-block;
   padding: 20px 10px;
 }
@@ -32,18 +18,4 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.anime-img {
-  width: 20%;
-  height: 100%;
-}
-
-span {
-  font-weight: 600;
-  color: crimson;
-}
-
-p {
-  margin: 5px 0;
 }

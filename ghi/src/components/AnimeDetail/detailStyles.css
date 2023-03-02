@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  direction: row;
+  justify-content: center;
+}
+.detail {
+  display: flex;
+  flex-basis: 70%;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.anime-img {
+  width: 20%;
+  height: 100%;
+}
+
+span {
+  font-weight: 600;
+  color: crimson;
+}
+
+p {
+  margin: 5px 0;
+}

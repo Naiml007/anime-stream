@@ -1,9 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import AnimeCard from "../anime/AnimeCard";
+import AnimeCard from "../../components/AnimeCard/AnimeCard";
 import "./releaseStyle.css";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
+import SearchAnime from "../SearchResults";
 
 export default function Releases() {
   const [releases, setReleases] = useState([]);
@@ -25,16 +26,16 @@ export default function Releases() {
 
   return (
     <div>
-      <div>
-        HELLOOOOO <br />
+      {/* <div>
         <ReactPlayer
           controls
           width="640px"
           height="360px"
           volume={0.5}
-          url="https://wwwx12.gofcdn.com/videos/hls/1aTSAgciDwxGHDXrRENMsQ/1677293882/184141/0789fd4f049c3ca2a49b860ea5d1f456/ep.1.1657688325.1080.m3u8"
+          url="https://wwwx13.gofcdn.com/videos/hls/jeMmwuTd2_TUP6MdgtFmew/1677557700/199052/8989c12656ede0d12b50e2c9cf22402c/ep.6.1676225831.1080.m3u8"
         />
-      </div>
+      </div> */}
+      <SearchAnime />
       <h2>NEW RELEASES</h2>
       <div className="container">
         {releases.map((anime) => (

@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import anime_routes
+from api import anime_routes
 
 app = FastAPI(
     title="Anime Streaming - Routers",
